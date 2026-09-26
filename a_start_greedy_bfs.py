@@ -56,8 +56,7 @@ def greedy(start, goal):
 
             if child not in visited:
                 heapq.heappush(
-                    pq,
-                    (h[child], child, path + [child])
+                    pq, (h[child], child, path + [child])
                 )
 
 

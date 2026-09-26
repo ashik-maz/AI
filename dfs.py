@@ -24,7 +24,7 @@ def dfs(start, goal):
 	visited = set()
 	while stack:
 		node, path = stack.pop()
-		print("Expand:", node, "Stack:", list(stack))
+		print("Expand:", node, "\nStack:", list(stack))
 		if node == goal:
 			return path
 		if node not in visited:
